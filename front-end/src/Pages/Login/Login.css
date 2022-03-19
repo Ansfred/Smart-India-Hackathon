@@ -1,0 +1,130 @@
+.login input {
+  border-radius: 15px;
+  width: 200px;
+  height: 35px;
+  display: block;
+  margin: auto;
+  border: 2.3px solid #2770a1;
+  padding-left: 10px;
+  outline: none;
+}
+.login {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  padding: 120px 0 120px 0;
+  /* background-color: #34495e; */
+  background-image: url(../../loginbg.jpg);
+  background-size: cover;
+  /* background-size: contain; */
+}
+.login-card {
+  /* display: flex; */
+  justify-content: center;
+  height: auto;
+  width: 33%;
+  box-shadow: 5px 7px 7px 10px rgba(53, 49, 49, 0.678);
+  padding-top: 30px;
+  padding-bottom: 25px;
+  border-radius: 40px;
+  background-color: rgb(240, 255, 255);
+}
+.login-email {
+  padding-bottom: 13px;
+}
+.login-email input:focus {
+  width: 220px;
+  border-color: #1ba052;
+}
+.login-password {
+  padding-bottom: 13px;
+}
+.login-password input:focus {
+  width: 220px;
+  border-color: #1ba052;
+}
+.login button {
+  width: 110px;
+  height: 45px;
+  border-radius: 40px;
+  color: #fff;
+  border: 2px solid #038a3b;
+  font-size: large;
+  background-color: rgb(13, 98, 195);
+}
+.login button:hover {
+  background-color: rgb(12, 84, 167);
+}
+.login .links .forgotPassword {
+  color: #005e9c;
+  padding-left: 80px;
+  float: left;
+}
+.login .links .forgotPassword:hover {
+  color: blue;
+}
+.login .links .signUp:hover {
+  color: blue;
+}
+.login .links .signUp {
+  color: #71bcee;
+  padding-right: 80px;
+  float: right;
+}
+@media screen and (max-width: 850px) {
+  .login input {
+    width: 150px;
+  }
+  .login-password input:focus {
+    width: 190px;
+  }
+  .login-email input:focus {
+    width: 190px;
+  }
+  .login .links .forgotPassword {
+    color: #005e9c;
+    padding-left: 30px;
+    float: left;
+  }
+  .login .links .signUp {
+    color: #005e9c;
+    padding-right: 30px;
+    float: right;
+  }
+  .login-card {
+    width: 250px;
+  }
+  .login {
+    padding: 190px 0 250px 0;
+  }
+}
+@media screen and (min-width: 850px) {
+  .login {
+    padding: 180px 0 240px 0;
+  }
+  .login .links .forgotPassword {
+    color: #005e9c;
+    padding-left: 40px;
+    float: left;
+  }
+  .login .links .signUp {
+    color: #005e9c;
+    padding-right: 40px;
+    float: right;
+  }
+}
+@media screen and (min-width: 1040px) {
+  .login {
+    padding: 140px 0 150px 0;
+  }
+  .login .links .forgotPassword {
+    color: #005e9c;
+    padding-left: 70px;
+    float: left;
+  }
+  .login .links .signUp {
+    color: #005e9c;
+    padding-right: 70px;
+    float: right;
+  }
+}
