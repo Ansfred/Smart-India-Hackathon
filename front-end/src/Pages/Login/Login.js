@@ -2,7 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Login.css";
 
-function Login() {
+// after login redirect to /home
+function Login({status}) {
   return (
     <div className="login">
       <div className="login-card">
