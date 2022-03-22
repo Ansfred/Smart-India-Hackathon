@@ -34,6 +34,7 @@ function Signup() {
             <input
               type="text"
               placeholder="Enter First Name"
+              className="firstname-input"
               required
               onChange={(e) => setfirst_name(e.target.value)}
             ></input>
@@ -42,6 +43,7 @@ function Signup() {
             <input
               type="text"
               placeholder="Enter Last Name"
+              className="lastname-input"
               required
               onChange={(e) => setlast_name(e.target.value)}
             ></input>
@@ -50,6 +52,7 @@ function Signup() {
             <input
               type="email"
               placeholder="Enter Email"
+              className="signup-email-input"
               required
               onChange={(e) => setemail(e.target.value)}
             ></input>
@@ -59,6 +62,7 @@ function Signup() {
             <input
               type="password"
               placeholder="Enter Password"
+              className="signup-password-input"
               required
               onChange={(e) => setpassword(e.target.value)}
             ></input>
@@ -67,12 +71,15 @@ function Signup() {
             <input
               type="password"
               placeholder="Confirm Password"
+              className="signup-confirm-password-input"
               required
             ></input>
           </div>
 
           {/* <Link to="/">Forgot Password</Link> */}
-          <button type="submit">Sign Up</button>
+          <button className="signupbtn" type="submit">
+            Sign Up
+          </button>
         </form>
         <div className="links">
           <p>
