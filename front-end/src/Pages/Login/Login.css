@@ -95,12 +95,12 @@
     width: 250px;
   }
   .login {
-    padding: 190px 0 250px 0;
+    padding: 30vh 0 40vh 0;
   }
 }
 @media screen and (min-width: 850px) {
   .login {
-    padding: 180px 0 240px 0;
+    padding: 30vh 0 40vh 0;
   }
   .login .links .forgotPassword {
     color: #005e9c;
@@ -115,7 +115,7 @@
 }
 @media screen and (min-width: 1040px) {
   .login {
-    padding: 140px 0 150px 0;
+    padding: 30vh 0 40vh 0;
   }
   .login .links .forgotPassword {
     color: #005e9c;
@@ -126,5 +126,10 @@
     color: #005e9c;
     padding-right: 70px;
     float: right;
+  }
+}
+@media screen and (min-width: 1040px) {
+  .login-card {
+    width: 350px;
   }
 }
