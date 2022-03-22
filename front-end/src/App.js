@@ -12,7 +12,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        {!loginStatus ? (
+        {loginStatus ? (
           <Routes>
             <Route path="/" element={<LandingPage />}></Route>
             <Route path="/login" element={<Login></Login>}></Route>
