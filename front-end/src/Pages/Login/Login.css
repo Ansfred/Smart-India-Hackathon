@@ -9,8 +9,10 @@
   outline: none;
 }
 .login {
+  min-height: 100vh;
   text-align: center;
   justify-content: center;
+  align-items: center;
   display: flex;
   padding: 120px 0 120px 0;
   /* background-color: #34495e; */
@@ -18,14 +20,21 @@
   background-size: cover;
   /* background-size: contain; */
 }
+
+.login h1 {
+  padding-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
 .login-card {
   /* display: flex; */
   justify-content: center;
-  height: auto;
+  height: fit-content;
   width: 33%;
   box-shadow: 5px 7px 7px 10px rgba(53, 49, 49, 0.678);
   padding-top: 30px;
-  padding-bottom: 25px;
+  padding-bottom: 40px;
+  padding-bottom: 40px;
   border-radius: 40px;
   background-color: rgb(240, 255, 255);
 }
@@ -94,14 +103,8 @@
   .login-card {
     width: 250px;
   }
-  .login {
-    padding: 30vh 0 40vh 0;
-  }
 }
 @media screen and (min-width: 850px) {
-  .login {
-    padding: 30vh 0 40vh 0;
-  }
   .login .links .forgotPassword {
     color: #005e9c;
     padding-left: 40px;
@@ -114,9 +117,6 @@
   }
 }
 @media screen and (min-width: 1040px) {
-  .login {
-    padding: 30vh 0 40vh 0;
-  }
   .login .links .forgotPassword {
     color: #005e9c;
     padding-left: 70px;
