@@ -1,4 +1,8 @@
-.signup input {
+.signup-confirm-password-input,
+.signup-password-input,
+.signup-email-input,
+.lastname-input,
+.firstname-input {
   border-radius: 15px;
   width: 180px;
   height: 35px;
@@ -64,7 +68,7 @@
     width: 220px;
     border-color: #1ba052;
   } */
-.signup button {
+.signup .signupbtn {
   width: 110px;
   height: 45px;
   border-radius: 40px;
