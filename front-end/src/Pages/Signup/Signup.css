@@ -96,16 +96,21 @@
     width: 250px;
   }
   .signup {
-    padding: 190px 0 250px 0;
+    padding: 20vh 0 35vh 0;
   }
 }
 @media screen and (min-width: 850px) {
   .signup {
-    padding: 180px 0 240px 0;
+    padding: 20vh 0 30vh 0;
   }
 }
 @media screen and (min-width: 1040px) {
   .signup {
-    padding: 140px 0 150px 0;
+    padding: 20vh 0 30vh 0;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .signup-card {
+    width: 350px;
   }
 }
