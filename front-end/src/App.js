@@ -22,13 +22,13 @@ function App() {
               path="/setnewpassword"
               element={<SetNewPassword></SetNewPassword>}
             ></Route>
+            <Route path="/add" element={<PatientForm />}></Route>
           </Routes>
         ) : (
           <>
             <NavBar />
             <Routes>
               <Route path="/home" element={<Home />}></Route>
-              <Route path="/add" element={<PatientForm />}></Route>
             </Routes>
           </>
         )}

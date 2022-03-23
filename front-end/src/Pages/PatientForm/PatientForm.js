@@ -1,8 +1,17 @@
-import React, { useState } from "react";
-import axios from "axios";
+import React, { useState, useEffect, useContext } from "react";
+// import axios from "axios";
+import { useNavigate, useLocation } from "react-router-dom";
+import useAxiosPrivate from "../../hooks/useAxiosPrivate";
+import AuthContext from "../../context/AuthProvider";
+
 import "./PatientForm.css";
 
 const PatientForm = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const { auth } = useContext(AuthContext);
+  const axios = useAxiosPrivate();
+
   const [hadOperation, setHadOperation] = useState(true);
   const [patientFormData, setPatientFormData] = useState({
     hospitalName: "",
@@ -60,8 +69,7 @@ const PatientForm = () => {
         data: patientFormDataObj,
         headers: {
           "Content-Type": "multipart/form-data",
-          Authorization:
-            "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQ3OTM5NTE2LCJpYXQiOjE2NDc5MzIzMTYsImp0aSI6ImM2ZWJlZjYzYzczNDQzODFhY2Q5ODFkMzNmN2RkNDM5IiwidXNlcl9pZCI6Mn0.a8XyDJ-oGWuWxoqDlgMQyUaTQ3Yz7r1cdueXJgkxdO8",
+          Authorization: "Bearer " + auth.accessToken,
         },
       });
       clearForm();
@@ -72,6 +80,7 @@ const PatientForm = () => {
       }, 1800);
     } catch (err) {
       console.log("Error Occurred!", err);
+      navigate("/login", { state: { from: location }, replace: true });
     }
   };
 
