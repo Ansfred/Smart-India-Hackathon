@@ -1,0 +1,77 @@
+.search-container h2 {
+  text-align: center;
+  padding: 1rem 2rem;
+  font-weight: 500;
+}
+
+.search-query-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#search-query {
+  margin: 0 2rem;
+  padding: 0.2rem 1rem;
+  width: 50%;
+  border-radius: 10px;
+  border: 3px solid royalblue;
+}
+
+.search-query-container button {
+  background-color: royalblue;
+  transition: background-color 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+  color: white;
+  border: none;
+  padding: 0.5rem 2rem;
+  border-radius: 15px;
+}
+
+.search-query-container button:hover {
+  background-color: rgb(10, 52, 177);
+}
+
+#responses-title {
+  margin-top: 1rem;
+}
+
+.responses-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.response-card {
+  margin: 0.5rem 2rem;
+  width: 60%;
+  background-color: black;
+  height: fit-content;
+  min-height: 155px;
+  border-radius: 20px;
+  background: #1cd8d2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #93edc7,
+    #1cd8d2
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #93edc7,
+    #1cd8d2
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 1rem;
+}
+
+.response-card h3 {
+  font-size: 1.5rem;
+}
+
+.hospital-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.response-card p {
+  font-size: 1.25rem;
+  margin: 0;
+}
