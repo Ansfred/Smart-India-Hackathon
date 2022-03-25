@@ -22,7 +22,7 @@ const Search = () => {
           <div className="response-card" key={dataObj.id}>
             <p className="hospital-name">{`Hospital Name: ${dataObj.hospital_name}`}</p>
             <p>{`Problem Diagnosed: ${dataObj.problem_dignosed}`}</p>
-            {dataObj.surgery_name !== "" && (
+            {dataObj.surgery_name !== null && (
               <p>{`Surgery Name: ${dataObj.surgery_name}`}</p>
             )}
             <p>{`Cost Incurred: ₹${dataObj.cost}`}</p>
@@ -70,13 +70,20 @@ const Search = () => {
       completeData.filter((dataObj) => {
         const hospital = dataObj.hospital_name.toLowerCase();
         const problem = dataObj.problem_dignosed.toLowerCase();
-        const surgery = dataObj.surgery_name.toLowerCase();
+        let surgery;
+        if (dataObj.surgery_name) {
+          surgery = dataObj.surgery_name.toLowerCase();
+        }
         const query = searchQuery.toLowerCase();
-        return (
-          hospital.includes(query) ||
-          problem.includes(query) ||
-          surgery.includes(query)
-        );
+        if (dataObj.surgery_name) {
+          return (
+            hospital.includes(query) ||
+            problem.includes(query) ||
+            surgery.includes(query)
+          );
+        } else {
+          return hospital.includes(query) || problem.includes(query);
+        }
       })
     );
     setInitialRender(false);
