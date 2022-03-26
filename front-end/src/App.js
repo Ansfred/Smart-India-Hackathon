@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import LandingPage from "./Pages/LandingPage/LandingPage";
+// import LandingPage from "./Pages/LandingPage/LandingPage";
 import PatientForm from "./Pages/PatientForm/PatientForm";
 import NavBar from "./Pages/NavBar/NavBar";
 import Home from "./Pages/Home/Home";
@@ -16,7 +16,8 @@ function App() {
       <div className="App">
         {!loginStatus ? (
           <Routes>
-            <Route path="/" element={<LandingPage />}></Route>
+            {/* <Route path="/" element={<LandingPage />}></Route> */}
+            <Route path="/" element={<Home />}></Route>
             <Route path="/login" element={<Login></Login>}></Route>
             <Route path="/signup" element={<Signup></Signup>}></Route>
             <Route
@@ -24,13 +25,13 @@ function App() {
               element={<SetNewPassword></SetNewPassword>}
             ></Route>
             <Route path="/add" element={<PatientForm />}></Route>
+            <Route path="/viewrecords" element={<Search />}></Route>
+            <Route path="/" element={<Home />}></Route>
           </Routes>
         ) : (
           <>
             <NavBar />
-            <Routes>
-              <Route path="/home" element={<Home />}></Route>
-            </Routes>
+            <Routes></Routes>
           </>
         )}
       </div>
