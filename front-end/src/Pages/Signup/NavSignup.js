@@ -20,7 +20,7 @@ function NavSignup() {
     >
       <div className="container-fluid">
         <Link style={{ fontSize: "large" }} className="navbar-brand" to="/">
-          Navbar
+          Ctrl Alt Elite
         </Link>
         <button
           className="navbar-toggler"

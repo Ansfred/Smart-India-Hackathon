@@ -38,4 +38,4 @@ class PatientListAPIView(ListCreateAPIView):
         :return: A list of objects that have the same donor as the user.
         """
         # This is filtering the queryset of the model by the donor.
-        return self.queryset.filter(patient=self.request.user)
+        return self.queryset.all()
