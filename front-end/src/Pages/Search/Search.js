@@ -3,6 +3,7 @@ import "./Search.css";
 import { useNavigate, useLocation } from "react-router-dom";
 import useAxiosPrivate from "../../hooks/useAxiosPrivate";
 import AuthContext from "../../context/AuthProvider";
+import NavSearch from "./NavSearch";
 
 const Search = () => {
   const navigate = useNavigate();
@@ -90,21 +91,25 @@ const Search = () => {
   };
 
   return (
-    <div className="search-container">
-      <h2>Get Information</h2>
-      <div className="search-query-container">
-        <input
-          name="search-query"
-          id="search-query"
-          value={searchQuery}
-          onChange={handleChange}
-          placeholder="Enter hospital name or operation name"
-        ></input>
-        <button onClick={handleSearch}>Search</button>
+    <>
+      <NavSearch></NavSearch>
+
+      <div className="search-container">
+        <h2>Get Information</h2>
+        <div className="search-query-container">
+          <input
+            name="search-query"
+            id="search-query"
+            value={searchQuery}
+            onChange={handleChange}
+            placeholder="Enter hospital name or operation name"
+          ></input>
+          <button onClick={handleSearch}>Search</button>
+        </div>
+        <h2 id="responses-title">Responses</h2>
+        <div className="responses-container">{responseElements}</div>
       </div>
-      <h2 id="responses-title">Responses</h2>
-      <div className="responses-container">{responseElements}</div>
-    </div>
+    </>
   );
 };
 

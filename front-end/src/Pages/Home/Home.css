@@ -1,0 +1,23 @@
+.home {
+  background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm373batch15-bg-11.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=f8e17abb22adb3b3261d9076259e3e0e");
+  /* position: fixed; */
+  width: 100%;
+  min-height: 55vmax;
+  background-size: cover;
+  /* background-position: center; */
+}
+.home-howitworks {
+  background: linear-gradient(360deg, rgb(7, 140, 218), rgb(216, 255, 250));
+  position: relative;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+.home-ouraim {
+  margin-top: 25vmax;
+  align-items: center;
+  text-align: center;
+  font-size: x-large;
+  color: #1ba052;
+}
