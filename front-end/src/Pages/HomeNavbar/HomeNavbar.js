@@ -19,12 +19,8 @@ function LandingPage() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-transperent">
       <div className="container-fluid">
-        <Link
-          style={{ fontSize: "large", color: "yellow" }}
-          className="navbar-brand"
-          to="/"
-        >
-          Ctrl+Alt+Elite
+        <Link style={{ fontSize: "large" }} className="navbar-brand" to="/">
+          Ctrl Alt Elite
         </Link>
         <button
           className="navbar-toggler"
