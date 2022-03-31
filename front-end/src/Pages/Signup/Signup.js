@@ -21,6 +21,11 @@ function Signup() {
           headers: { "Content-Type": "application/json" },
         }
       );
+      setemail("");
+      setfirst_name("");
+      setlast_name("");
+      setpassword("");
+      document.querySelector("#confirm-pass-input").value = "";
       //   console.log(response.data);
       //   console.log(response.accessToken);
       //   console.log(JSON.stringify(response));
@@ -39,6 +44,7 @@ function Signup() {
                 placeholder="Enter First Name"
                 className="firstname-input"
                 required
+                value={first_name}
                 onChange={(e) => setfirst_name(e.target.value)}
               ></input>
             </div>
@@ -48,6 +54,7 @@ function Signup() {
                 placeholder="Enter Last Name"
                 className="lastname-input"
                 required
+                value={last_name}
                 onChange={(e) => setlast_name(e.target.value)}
               ></input>
             </div>
@@ -57,6 +64,7 @@ function Signup() {
                 placeholder="Enter Email"
                 className="signup-email-input"
                 required
+                value={email}
                 onChange={(e) => setemail(e.target.value)}
               ></input>
             </div>
@@ -67,6 +75,7 @@ function Signup() {
                 placeholder="Enter Password"
                 className="signup-password-input"
                 required
+                value={password}
                 onChange={(e) => setpassword(e.target.value)}
               ></input>
             </div>
@@ -76,6 +85,7 @@ function Signup() {
                 placeholder="Confirm Password"
                 className="signup-confirm-password-input"
                 required
+                id="confirm-pass-input"
               ></input>
             </div>
 
