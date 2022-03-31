@@ -12,8 +12,8 @@ function Aboutus() {
         <h1 className="heading">How It Works</h1>
         <ul>
           <li>
-            Pateints can add their hospital records for helping others to not
-            get exploit.
+            Patients can add their hospital records for helping others to not
+            get exploited.
           </li>
           <li>
             People will be able to filter costs by hospital or surgery and

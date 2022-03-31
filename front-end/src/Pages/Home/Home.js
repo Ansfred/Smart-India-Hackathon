@@ -15,8 +15,14 @@ function Home() {
           <LandingPage></LandingPage>
         </div>
         <div data-aos="fade-up" className="home-ouraim">
-          We clearly aims at finding the injustice and letting the user know it,
-          but not on further official actions yet.
+          Users can either enter their data to help other patients by clicking
+          on add records or see the data already entered by clicking on view
+          records. We clearly aim at finding the injustice and letting the user
+          know about it, but not on further official actions yet. <br></br>
+          Additionally we will implement functionality for the user to submit a
+          complaint if they feel that they have been overcharged and/or
+          exploited. These complaints will be visible to the government who can
+          take action accordingly.
         </div>
       </div>
       <div className="home-howitworks">

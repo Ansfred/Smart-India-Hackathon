@@ -15,9 +15,10 @@
   align-items: center;
 }
 .home-ouraim {
-  margin-top: 25vmax;
+  margin-top: 15vmax;
+  padding: 0 10rem;
   align-items: center;
-  text-align: center;
+  text-align: left;
   font-size: x-large;
-  color: #1ba052;
+  color: #fff;
 }
